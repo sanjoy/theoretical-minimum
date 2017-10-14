@@ -42,5 +42,23 @@ The Lagrangian formulation of mechanics state:
 \item The Euler-Lagrange equation dictates the laws of motion:
   $$\frac{dP_i}{dt} = \frac{\partial L}{\partial q_i}$$
 \end{itemize}
- 
+
+\section{Symmetries and conservation}
+
+A ``symmetry'' is change in the inputs to the Lagrangian through which the value
+of the Lagrangian does not change.
+
+\subsection{Co-ordinate translation symmetry}
+
+If $L$ is invariant under $\partial q_i = f_i(\overrightarrow{q}) \epsilon$ then
+the quantity $Q = \sum_{i} P_{i} f_i(\overrightarrow{q})$ is conserved.
+
+\subsection{Time translation symmetry}
+
+Let $H$ (the Hamiltonian) be defined as $H = \sum_i P_i \dot{q}_i$.  Then using
+the Euler-Lagrange equations, we can show that $\frac{H}{t} = \frac{\partial
+  L}{\partial t}$.  If $L$ does not depend directly on $t$ then we say $L$ has
+time-translation symmetry, and $H$ does not change with time.  $H$ is the
+definition of energy, so time-translation symmetry implies energy conservation.
+
 \end{document}
