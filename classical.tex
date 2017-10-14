@@ -1,0 +1,46 @@
+\documentclass[12pt]{article}
+\begin{document}
+
+\title{Theoretical Minimum: Classical Mechanics}
+
+\maketitle
+
+\section{Admissible Laws}
+
+A physical law constitutes of a phase space $\phi$ and a transition function
+$f$.  The physical system evolves as $P_{t+1} = f(P)$ with $P \in \phi$.  The
+transition function needs to be:
+
+\begin{itemize}
+\item Deterministic -- knowing the state at time $T$ is enough to compute the
+  state at an arbitrary time in future.  This follows from $f$ being a
+  function.
+\item Reversible -- knowing the state at time $T$ is enough to compute the state
+  at an arbitrary time in the past.
+\end{itemize}
+
+\subsection{Example of inadmissible law}
+
+Aristotle's law of motion $m\dot{\overrightarrow{x}} = \overrightarrow{F}$ is
+inadmissible.  To see why this is the case, consider what happens if we attach a
+block of mass $1$ to a spring with spring constant $1$.  Then the law of motion
+becomes $\dot{x} = -x$, which solves to $x=x_0 e^{-t}$.  This is not reversible
+-- both $x_0=0$ and $x_0 = \epsilon$ eventually map to $x_{final}=0$.
+
+\section{Lagrangian mechanics}
+
+The Lagrangian formulation of mechanics state:
+
+\begin{itemize}
+\item Every physical system has an associated Lagrangian = $L(q, \dot{q}, t)$.
+  For many simple systems $L(q, \dot{q}, t) = K(\dot{q}) - V(q)$ where $K$ is
+  the kinetic energy of the system and $V$ is the potential energy of the
+  system.  It may not always cleanly separate into kinetic and potential
+  energies this way.
+\item $P_i$, the generalized momentum with respect to the $i^{th}$ co-ordinate
+  is defined to be $\frac{dL}{d\dot{q_i}}$.
+\item The Euler-Lagrange equation dictates the laws of motion:
+  $$\frac{dP_i}{dt} = \frac{\partial L}{\partial q_i}$$
+\end{itemize}
+ 
+\end{document}
