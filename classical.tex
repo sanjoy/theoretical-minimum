@@ -70,4 +70,16 @@ of $p$.  In cases where we can't solve for $\dot q$ the Hamiltonian is invalid
 Hamilton's equations: $\frac{\partial H}{\partial p_i}=\dot{q_i}$ and
 $\frac{\partial H}{\partial q_i}=-\dot{p_i}$.
 
+\section{Liouville's theorem}
+
+In Hamiltonian mechanics the phase space is a set of co-ordinates $p_i$ and
+$q_i$, where each point moves around with time.  Liouville's theorem (formal and
+continuous analog of ``physical laws need to be information preserving'') states
+that there are no sinks and sources in this fluid.  Proof: let $V_{p_i}$ be
+$\dot p_i$ and $V_{q_i}$ be $\dot q_i$.  Then $V_{p_i}$ and $V_{q_i}$ form a
+vector field $\overrightarrow V$, such that $\overrightarrow{\nabla} \cdot
+\overrightarrow{V} = 0$ \footnote{The divergence of a vector field $V$ is defined as
+$\overrightarrow{\nabla} \cdot \overrightarrow{V} = \sum_i \frac{\partial
+  V_i}{\partial x_i}$.} (using algebra + Hamilton's equations).
+
 \end{document}
