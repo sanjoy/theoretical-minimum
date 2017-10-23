@@ -78,8 +78,32 @@ continuous analog of ``physical laws need to be information preserving'') states
 that there are no sinks and sources in this fluid.  Proof: let $V_{p_i}$ be
 $\dot p_i$ and $V_{q_i}$ be $\dot q_i$.  Then $V_{p_i}$ and $V_{q_i}$ form a
 vector field $\overrightarrow V$, such that $\overrightarrow{\nabla} \cdot
-\overrightarrow{V} = 0$ \footnote{The divergence of a vector field $V$ is defined as
-$\overrightarrow{\nabla} \cdot \overrightarrow{V} = \sum_i \frac{\partial
-  V_i}{\partial x_i}$.} (using algebra + Hamilton's equations).
+\overrightarrow{V} = 0$ \footnote{The divergence of a vector field $V$ is
+  defined as $\overrightarrow{\nabla} \cdot \overrightarrow{V} = \sum_i
+  \frac{\partial V_i}{\partial x_i}$.} (using algebra + Hamilton's equations).
+Liouville's theorem does not need energy conservation.
+
+\section{Poisson brackets}
+
+Poisson brackets are a notion defined as $\{F,G\} = \sum_i \frac{\partial
+  F}{\partial q_i} \frac{\partial H}{\partial p_i} - \frac{\partial F}{\partial
+  p_i} \frac{\partial H}{\partial q_i}$.  With this notation, Hamilton's
+equation can be condensed to: for any function $F$ over the phase space of a
+system, $\dot F = \{F,H\}$.
+
+Here are some algebraic properties of Poisson brackets:
+
+\begin{itemize}
+\item $\{A,B\} = -\{B,A\}$
+\item $\{A+B,C\} = \{A,C\} + \{B,C\}$
+\item $\{kA,B\} = k\{A,B\}$
+\item $\{AB,C\} = \{A,C\}B + A\{B,C\}$
+\item $\{F(q_i),G(q_i)\} = \{F(p_i),G(p_i)\} = 0$
+\item $\{q_i, p_j\} = \delta_{i j}$\footnote{$\delta$ is Kronecker's delta}
+\end{itemize}
+
+Angular momentum is what is conserved under rotational invariance.
+
+
 
 \end{document}
